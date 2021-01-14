@@ -60,9 +60,9 @@ for page in range(0,int(page_number)*10,10):         #  this loop goes through a
                     d["Lot zise"]=(feature_name.text)
         l.append(d)    # appends the dictionary to a list
 
-print(l)
+#print(l)
 
 df=pandas.DataFrame(l)    # inserts the list into a dataframe
-print(df)
+#print(df)
 df.to_csv("Output.csv")
 
